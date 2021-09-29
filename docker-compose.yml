@@ -1,0 +1,12 @@
+version: '2'
+services:
+  nginx:
+    build:
+      context: ./nginx
+    ports:
+      - "3000:3000"
+  backend:
+    build:
+      context: ./server
+
+
